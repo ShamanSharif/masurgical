@@ -222,9 +222,3 @@ nav ul li a {
 .showcase_show--picture__img-i {
     width: 25rem;
 }
-
-@media(max-width: 580px) {
-    .showcase_show--picture__img-i {
-        width: 0;
-    }
-}
