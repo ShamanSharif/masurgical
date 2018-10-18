@@ -187,23 +187,30 @@ nav ul li a {
 .showcase_show {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .showcase_show--quote {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    justify-items: center;
+    justify-content: flex-start;
 }
 
 .showcase_show--quote__body {
-    display: flex;
-    justify-content: center;
+    max-width: 20rem;
+    font-size: 1.6rem;
 }
 
-.showcase_show--quote__name {}
+.showcase_show--quote__name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
 
-.showcase_show--quote__pos {}
+.showcase_show--quote__pos {
+    color: gray;
+}
 
 .showcase_show--picture {
     display: flex;
@@ -213,5 +220,11 @@ nav ul li a {
 .showcase_show--picture__img {}
 
 .showcase_show--picture__img-i {
-    width: 35rem;
+    width: 25rem;
+}
+
+@media(max-width: 580px) {
+    .showcase_show--picture__img-i {
+        width: 0;
+    }
 }
