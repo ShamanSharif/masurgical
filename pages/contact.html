@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Us | Ma Surgical & Suppliers</title>
+    <title>Contact Us | Ma Surgical & Suppliers</title>
     <link rel="stylesheet" href="../css/skeleton.css">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://use.fontawesome.com/3ffe30ea53.js"></script>
@@ -24,8 +24,8 @@
                 <div class="menu">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/about.html">About Us</a></li>
                         <li><a href="#">Products</a></li>
-                        <li><a href="../pages/contact.html">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -37,7 +37,7 @@
     <div class="section sub_head">
         <div class="container">
         <div class="sub_head--heading">
-            <h3>Who Are We?</h3>
+            <h3>Contact US?</h3>
         </div>
         <div class="sub_head--para">
             <p>
@@ -48,31 +48,30 @@
     </div>
     <div class="section showcase">
         <div class="container">
-            <div class="showcase_show row">
-                <div class="showcase_show--picture one-half column">
-                    <div class="showcase_show--picture__img">
-                        <img src="../images/people/people.jpeg" class="showcase_show--picture__img-i" alt="people">
-                    </div>
+        <form>
+            <div class="row">
+                <div class="six columns">
+                <label for="emailInput">Your email</label>
+                <input class="u-full-width" placeholder="mail@mailbox.com" id="emailInput" type="email">
                 </div>
-                <div class="showcase_show--quote one-half column">
-                    <p class="showcase_show--quote__body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, fugiat.</p>
-                    <p class="showcase_show--quote__name">Mr. A. B. Xxxx</p>
-                    <p class="showcase_show--quote__pos">- FFFFF</p>
-                </div>
-            </div>
-            <div class="showcase_show row">
-                <div class="showcase_show--picture one-half column">
-                    <div class="showcase_show--picture__img">
-                        <img src="../images/people/people.jpeg" class="showcase_show--picture__img-i" alt="people">
-                    </div>
-                </div>
-                <div class="showcase_show--quote one-half column">
-                    <p class="showcase_show--quote__body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, fugiat.</p>
-                    <p class="showcase_show--quote__name">Mr. A. B. Xxxx</p>
-                    <p class="showcase_show--quote__pos">- FFFFF</p>
+                <div class="six columns">
+                <label for="recipientInput">Reason for contacting</label>
+                <select class="u-full-width" id="recipientInput">
+                    <option value="Option 1">Questions</option>
+                    <option value="Option 2">Purchase</option>
+                    <option value="Option 3">Other. Please Specify?</option>
+                </select>
                 </div>
             </div>
-        </div>
+            <label for="message">Message</label>
+            <textarea class="u-full-width" placeholder="Hi …" id="message"></textarea>
+            <label class="example-send-yourself-copy">
+                <input type="checkbox">
+                <span class="label-body">Send a copy to yourself</span>
+            </label>
+            <input class="button-primary" value="Submit" type="submit">
+        </form>
+    </div>
     </div>
     <div class="section footer">
         <div class="container footer_container">
@@ -98,3 +97,5 @@
     </div>
 </body>
 </html>
+
+
